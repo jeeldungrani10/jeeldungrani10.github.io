@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h1>Welcome Admin!</h1>
+      <div
+        style="
+          box-shadow: 1px 1px 2px rgb(107, 104, 104);
+          margin-top: 50px;
+          width: 400px;
+          height: 350px;
+          background: cyan;
+        "
+      >
+        <form id="adminForm">
+          <table>
+            <thead>
+              <th><h2>Login as Admin</h2></th>
+            </thead>
+            <tr>
+              <td><h3>Email Id:</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="email"
+                  style="border-radius: 10px; border: none; height: 20px;"
+                  id="admin_email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><h3>Password:</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="password"
+                  style="border-radius: 10px; border: none; height: 20px;"
+                  id="admin_password"
+                />
+              </td>
+            </tr>
+          </table>
+          <button
+            value="Login"
+            type="button"
+            onclick="adminLogin()"
+            style="
+              width: 70px;
+              margin-top: 20px;
+              height: 30px;
+              background-color: yellowgreen;
+              border-radius: 10px;
+            "
+          >
+            Login
+          </button>
+        </form>
+        <div style="margin-top: 15px;">
+          <a href="../index.html" style="color: blueviolet;">Login as User</a>
+        </div>
+      </div>
+    </center>
+  </body>
+
+  <script src="/Js/login.js"></script>
+  <script>
+    window.onload = function exampleFunction() {
+      window.alert("Username : admin@gmail.com  Password: admin@123");
+    };
+  </script>
+</html>
